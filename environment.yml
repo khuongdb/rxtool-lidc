@@ -1,0 +1,22 @@
+name: rxtool
+channels:
+  - conda-forge
+  - pytorch
+  - pytorch3d
+  - nvidia
+dependencies:
+  - pip
+  - pytorch
+  - torchvision
+  - pytorch3d
+  - einops
+  - pydicom
+  - matplotlib
+  - seaborn
+  - tqdm
+  - imageio
+  - fastcore
+  - pip:
+    - 'pyvista[all]'
+    - diffdrr
+     
