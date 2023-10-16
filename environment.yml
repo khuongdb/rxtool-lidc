@@ -16,7 +16,10 @@ dependencies:
   - tqdm
   - imageio
   - fastcore
+  - vtk
   - pip:
     - 'pyvista[all]'
     - diffdrr
+    - pylidc
+    - SimpleITK
      
