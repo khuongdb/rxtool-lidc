@@ -17,9 +17,10 @@ dependencies:
   - imageio
   - fastcore
   - vtk
+  - notebook
   - pip:
     - 'pyvista[all]'
     - diffdrr
     - pylidc
-    - SimpleITK
+    - itk
      
