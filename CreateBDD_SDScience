@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+#SBATCH -o createBDD-%j.out
+#SBATCH --error=errorcreateBDD-%j.err
+#SBATCH --nodes=1      
+#SBATCH --mem=150G
+#SBATCH -p c4140gpu.q       #32G GPU
+#SBATCH --gres=gpu:1
+#SBATCH -J "rxtools"
+#SBATCH -t 18:00:00
+#SBATCH --cpus-per-task=4
+#SBATCH --mail-user=julian.betancur@safrangroup.com
+#SBATCH --mail-type=END,FAIL,REQUEUE,TIME_LIMIT
+
+
+module load conda
+conda init
+
+conda activate rxtool ## conda environment
+
+cd /home/jbetancur/dev/rxtools/
+
+python  LIDC_create_BDD2_hdrr.py
