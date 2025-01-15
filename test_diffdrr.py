@@ -28,3 +28,4 @@ translation = torch.tensor([[bx, by, bz]], device=device)
 img = drr(rotation, translation, parameterization="euler_angles", convention="ZYX")
 plot_drr(img, ticks=False)
 plt.show()
+
